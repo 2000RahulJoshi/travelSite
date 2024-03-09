@@ -9,9 +9,27 @@ a{
     font-size: 19px;
 }
 
+.navLeft a{
+    color: gray;
+}
+
+.navRight a{
+    color: black;
+    font-weight: bold;
+}
+
+.home a{
+    font-weight: bolder;
+    color: black;
+}
+
 .navAnchor:hover{
     color: black;
     font-weight: bolder;
+}
+
+body{
+    background-color:  #eceaeb;
 }
 
 ::-webkit-scrollbar {
@@ -25,9 +43,7 @@ a{
 
 .navBar{
     width: 100%;
-    /* position: fixed; */
     padding: 4% 7% 3% 9%;
-    /* background-color: #eceaeb; */
 }
 
 .navLeft{
@@ -51,18 +67,13 @@ a{
     border-radius: 4px;
 }
 
-
 .navLeftGap{
     margin-left: 12%;
 }
 
-
-
 .mainContainer{
     width: 100%;
-    /* padding-top: 14%; */
     padding-top: 2%;
-
 }
 
 .firstPage{
@@ -76,22 +87,17 @@ a{
 
 .topContainerOne{
     width: 82%;
-    /* border: 1px solid blue; */
-    /* height: 12vh; */
     margin: auto;
-    /* background-color: red; */
     padding-bottom: 8%;
 }
 
 .topContainerOneText{
     display: inline-block;
     width: 38%;
-    /* border: 1px solid black; */
 }
 
 .topContainerImg{
     display: inline-block;
-    /* border: 1px solid green; */
     width: 55%;
     margin-left: 6%;
 }
@@ -113,10 +119,12 @@ a{
 
 .reserveTicketButton{
     width: 40%;
-    /* border: 1px solid red; */
     padding: 3%;
     background-color: black;
     margin-top: 8%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .reserveTicketButton button{
@@ -124,6 +132,7 @@ a{
     background: transparent;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .createMemoryContainer{
@@ -170,7 +179,6 @@ a{
 
 .imageSlides{
     width: 100%;
-    /* margin-top: 9%; */
     padding-bottom: 4%;
     background-image: url(./images/imageNine.png), url(./images/imageTen.png);
     background-repeat: no-repeat;
@@ -182,13 +190,11 @@ a{
 .imageSlidesContainer{
     width: 82%;
     margin: auto;
-    /* border: 2px solid black; */
 }
 
 .imageSlidesContainerOne,.imageSlidesContainerTwo,.imageSlidesContainerThree{
     width: 29.3%;
     display: inline-block;
-    /* border: 2px solid blue; */
 }
 
 .imageSlidesContainerTwo,.imageSlidesContainerThree{
@@ -218,30 +224,16 @@ a{
 }
 
 .unseenPlaces{
-
-    /* width: 100%;
-    background-image: url(./images/imageFourteen.png), url(./images/imageFifteen.png),url(./images/tape.png);
-    background-repeat: no-repeat;
-    background-position: right -8rem top 1rem, left 7rem top 24rem;
-    background-size: 26rem 34rem, 28rem 8rem; */
-
-    /* width: 100%;
-    background-image: url(./images/imageFourteen.png), url(./images/imageFifteen.png);
-    background-repeat: no-repeat;
-    background-position: right -8rem top 1rem, left 7rem top 24rem;
-    background-size: 26rem 34rem, 28rem 8rem; */
-
     width: 100%;
     background-image: url(./images/imageFourteen.png), url(./images/imageFifteen.png);
     background-repeat: no-repeat;
     background-position: right -8rem top 1rem, left 7rem top 24rem;
     background-size: 26rem 34rem, 20rem 5rem;
+    padding: 0 0 3% 0;
 }
 
 .unseenPlacesAeroplaneIcon{
-    /* border: 1px solid red; */
     margin: auto;
-    /* margin-top: 11%; */
     padding-top: 11%;
     width: 3%;
 }
@@ -276,57 +268,42 @@ a{
     margin: auto;
     margin-top: 15%;
     width: 82%;
-    /* border: 1px solid red; */
 }
 
-
 .unseenPlacesContainerTwoLeft{
-    /* border: 1px solid red; */
     width: 37%;
     display: inline-block;
-
 }
 
 .unseenPlacesContainerTwoRight{
-    /* border: 1px solid red; */
     width: 59%;
     display: inline-block;
     margin-left: 3.5%;
-
 }
 
-
-
 .unseenPlacesContainerTwoRightTop{
-    width: 58%;
+    width: 57%;
 }
 
 .unseenPlacesContainerTwoRightBottom{
-    margin-top: 6%;
+    margin-top: 5%;
 }
-
 
 .unseenPlacesContainerTwoRightBottomLeft{
     display: inline-block;
     width: 44%;
-    /* border: 1px solid blue; */
-    /* width: 17%; */
-    /* position: absolute; */
     font-size: 14.7px;
     text-decoration: underline;
+    vertical-align: top;
 }
 
 .unseenPlacesContainerTwoRightBottomRight{
     display: inline-block;
     width: 48%;
-    /* border: 1px solid green; */
-    /* margin-left: 5%; */
-    /* margin-left: 39%; */
-    font-size: 14px;
-    /* font-weight: bolder; */
     margin-left: 7%;
     font-size: 12px;
     font-weight: bold;
+    vertical-align: top;
 }
 
 .unseenPlacesContainerTwoRightBottomRightParaTwo{
@@ -336,11 +313,9 @@ a{
 
 .unseenPlacesContainerTwoRightBottomArrow{
     width: 22%;
-    /* border: 1px solid black; */
     margin-left: auto;
-    margin-top: 8%;
+    /* margin-top: 8%; */
 }
-
 
 .tape{
     position: absolute;
@@ -348,4 +323,300 @@ a{
     width: 3%;
     margin-top: 15%;
     margin-left: -1.3%;
+}
+
+.chooseLocation{
+    width: 100%;
+    background-color: black;
+    padding-top: 1%;
+    background-image: url(./images/imageSeventeen.png);
+    background-repeat: no-repeat;
+    background-position: left -9rem top 32rem;
+    background-size: 31rem 6rem;
+}
+
+.chooseLocationContent{
+    width: 82%;
+    margin: auto;
+    margin-top: 5%;
+    padding-bottom: 7%;
+}
+
+.chooseLocationContentLeft{
+    display: inline-block;
+    width: 40%;
+    color: white;
+}
+
+.chooseLocationContentImg{
+    display: inline-block;
+    width: 50%;
+    margin-left: 9%;
+}
+
+.AboutContainerTextHeading h1{
+    font-size: 74px;
+    line-height: 0.8;
+}
+
+.chooseLocationContentLeftParaOne p,.chooseLocationContentLeftParaTwo p{
+    font-size: 12px;
+    margin-top: 2.5%;
+}
+
+.chooseLocationContentLeftParaOne,.chooseLocationContentLeftParaTwo{
+    margin-top: 9%;
+}
+
+.chooseLocationContentLeftHeading h1{
+    font-size: 50px;
+    line-height: 1;
+}
+
+.chooseLocationContentLeftHeading{
+    padding-bottom: 11%;
+}
+
+.AboutContainer{
+    width: 100%;
+}
+
+.aboutContainerContent{
+    width: 82%;
+    margin: auto;/* margin-top: 7%; */
+    padding: 9% 0 7% 0;
+}
+
+.AboutContainerText{
+    display: inline-block;
+    width: 62%;
+    vertical-align: top;
+}
+
+.AboutContainerImg{
+    display: inline-block;
+    width: 32%;
+    margin-left: 4%;
+}
+
+.AboutContainerTextPara{
+    width: 96%;
+}
+
+.AboutContainerTextParaContainerpara{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+.AboutContainerTextParaContainerPlus{
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.AboutContainerTextParaContainer{
+    padding: 3% 0 3% 2%;
+    position: relative;
+}
+
+.lineOne{
+    border: 1px solid black;
+    margin-top: 16%;
+}
+
+.lineTwo{
+    border: 1px solid black;
+}
+
+.cards{
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-top: 4%;
+    padding-bottom: 11%;
+    background-image: url(./images/imageTwenty.png), url(./images/imageTwentyOne.png);
+    background-repeat: no-repeat;
+    background-position: left -6rem top 0rem, right -13rem bottom 4rem;
+    background-size: 29rem 9rem, 35rem 6rem;
+}
+
+.cardsContent{
+    width: 82%;
+    margin: auto;
+    /* border: 1px solid green; */
+}
+
+
+.cardsHeading{
+    text-align: center;
+    font-size: 34px;
+    line-height: 0.9;
+    padding-bottom: 6%;
+}
+
+.cardOne,.cardTwo,.cardThree{
+    width: 31%;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 6% 0;
+    border-radius: 9px;
+}
+
+.cardTwo,.cardThree{
+    margin-left: 3%;
+}
+
+.cardIcon{
+    width: 34%;
+    margin: auto;
+    padding-bottom: 6%;
+}
+
+.userCardName{
+    text-align: center;
+    font-weight: bold;
+    padding: 4% 0 5% 0;
+}
+
+.userCardDetail{
+    text-align: center;
+    padding: 0 6% 0 6%;
+    font-size: 18px;
+    /* color: grey; */
+}
+
+.allCards{
+    position: relative;
+}
+
+.cardLeftArrow,.cardRightArrow{
+    position: absolute;
+    font-size: 43px;
+    border: 2px solid black;
+    padding: 0 1% 3px 1%;
+    background-color: #eceaeb;
+    top: 44%;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.cardRightArrow{
+    right: -3%;
+}
+
+.cardLeftArrow{ 
+    left: -3%;
+}
+
+.formSection{
+    width: 100%;
+    padding-bottom: 8%;
+}
+
+.formSectionContent{
+    width: 82%;
+    margin: auto;
+}
+
+.formSectionLeft{
+    display: inline-block;
+    width: 43%;
+    vertical-align: top;
+    margin-left: 1%;
+}
+
+.formSectionLeftHeading{
+    font-size: 40px;
+    padding-bottom: 5%;
+}
+
+.formSectionRight{
+    display: inline-block;
+    width: 51%;
+    margin-left: 3.5%;
+    vertical-align: top;
+}
+
+.inputFormSpace{
+    padding-bottom: 5%;
+}
+
+.formSectionLeftUserInfo input,button,textarea{
+    font-size: 19px;
+    width: 90%;
+    resize: none;
+    padding: 2% 0 2% 5%;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color:  #eceaeb;
+
+}
+
+.textArea{
+    padding-bottom: 9%;
+}
+
+.formSectionLeftUserInfo button{
+    background-color: black;
+    color: white;
+    padding: 3% 0;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 6% 0;
+    background-image: url(./images/imageTwentyThree.png);
+    background-repeat: no-repeat;
+    background-position: left -30rem bottom 4rem;
+    background-size: 54rem 7rem;
+    background-color: #c5c5c5;
+}
+
+.footerContent{
+    width: 80%;
+    margin: auto;
+}
+
+.footerContentLeft{
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 29px;
+    line-height: 1;
+}
+
+.footerContentRight{
+    width: 72%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2%;
+}
+
+.footerContentRightHeading{
+    padding-bottom: 4%;
+}
+
+td:nth-child(4){
+    width: 17.5%;
+}
+
+td{
+    padding-bottom: 3%;
+}
+
+td a{
+    color: black;
+    font-size: 17px;
+}
+
+.footerContentQuickLink{
+    padding-bottom: 7%;
+}
+
+.footerCopyright{
+    text-align: center;
 }
